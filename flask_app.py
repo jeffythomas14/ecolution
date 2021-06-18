@@ -7,9 +7,9 @@ import numpy as np
 
 # Your API definition
 app = Flask(__name__)
-lr = joblib.load(open("model1.pkl"),rb) # Load "model.pkl"
+lr = joblib.load(open('model1.pkl'),'rb') # Load "model.pkl"
 print ('Model loaded')
-model_columns = joblib.load("model_columns1.pkl") # Load "model_columns.pkl"
+model_columns = joblib.load('model_columns1.pkl') # Load "model_columns.pkl"
 print ('Model columns loaded')
 
 @app.route('/trail',methods=['GET'])
