@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route('/trail',methods=['GET'])
 def trail():
-	return jsonify({'Key': 'Hello World'})
+	return "Hello World"
 
 @app.route('/predict', methods=['POST'])
 def predict():
